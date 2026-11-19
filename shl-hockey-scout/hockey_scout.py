@@ -9,7 +9,9 @@ class SHLhockeyscout:
 
     def find_player(self, player_name):
         for player in self.get_players():
-            if player_name == player["info"]["fullname"]:
+            if player_name == player["info"]["fullName"]:
+                return player
+
 
             
 

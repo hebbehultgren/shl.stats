@@ -6,5 +6,6 @@ shl_api = SHLApi()
 data = shl_api.get_data()
 
 hockey_scout = SHLhockeyscout(data)
-players = hockey_scout.get_players()
-print(len(players))
+players = hockey_scout.find_player()
+print(players["TOI_GP"])
+
